@@ -1,0 +1,129 @@
+html {
+  font-size: 62.5%; /* Now 10px = 1rem! */
+}
+
+body {
+  margin: 0;
+}
+
+a, button {
+  display: inline-block;
+  text-decoration: none;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+// Variables
+$black: #222222;
+$light-gray1: #777777;
+$light-gray2: #999999;
+$dark-gray1: #444444;
+$dark-gray2: #333333;
+$white: #ffffff;
+
+$red: #c90f0f;
+$orange: #ff6804;
+
+$border-radius: 10rem;
+$btn-padding: 1.5rem 3rem 1.5rem 3rem;
+
+.App {
+  background-color: $white;
+  font-family: sans-serif;
+  color: $black;
+  text-align: center;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.red {
+  color: $red;
+}
+
+.btn {
+  border-radius: $border-radius;
+  padding: $btn-padding;
+
+  &:visited,
+  &:link {
+    color: $white;  
+    background-color: $light-gray1;
+  }
+
+  &:hover,
+  &:active {
+    color: $white;  
+    background-color: $light-gray2;
+  }
+
+  &-dark {
+    &:visited,
+    &:link {
+      color: $white;  
+      background-color: $dark-gray2;
+    }
+
+    &:hover,
+    &:active {
+      color: $orange;  
+      background-color: $dark-gray1;
+    }
+  }
+}
+
+.header {
+  color: $white;
+  background-color: $black;
+
+  &_heading {
+    font-size: 4rem
+  }
+
+  &_button {
+    margin-bottom: 3rem;
+  }
+}
+
+.counter {
+  align-self: center;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+
+  &_button {
+    margin: 1.5rem 2rem 0;
+  }
+  
+  .count_heading {
+    margin-top: -1.5rem;
+    color: $light-gray1;
+  }
+}
+.count {
+  &_heading {
+    margin-top: -1rem;
+    color: $light-gray1;
+  }
+
+  &_current {
+    font-size: 6.5rem;
+    font-weight: 700;
+    text-align: center;
+    width: 20rem;
+  }
+}
+
+.footer {
+  background-color: $light-gray1;
+  color: $white;
+
+  &_copy {
+    margin: 2rem;
+  }
+}
+
+
